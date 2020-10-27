@@ -74,7 +74,7 @@ class Terrain{
 		//function of terrain
 		float f(float x)
 		{
-			return height*HEIGHT*(noise(x*WIDTH)+1.0f)/2.0f+miny;
+			return height*HEIGHT*(noise(x/WIDTH)+1.0f)/2.0f+miny;
 		}
 		
 		void Draw(char platno[HEIGHT/dH][WIDTH/dW+1])
